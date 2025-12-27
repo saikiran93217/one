@@ -24,7 +24,15 @@
 		</dependency>
 
 	</dependencies>
-	
+	<build>
+        <plugins>
+            <plugin>
+                <groupId>org.sonarsource.scanner.maven</groupId>
+                <artifactId>sonar-maven-plugin</artifactId>
+                <version>3.11.0.3922</version>
+            </plugin>
+        </plugins>
+    </build>
 	<distributionManagement>
 		 <snapshotRepository>
 		    <id>nexusRepo</id>
@@ -36,7 +44,8 @@
 		    <url>http:http://13.222.180.235:8081/</url>
 		</repository>
   	</distributionManagement>
-	
+
+
 	<pluginRepositories>
 	    <pluginRepository>    
 		<id>maven1</id>
